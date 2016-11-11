@@ -28,6 +28,7 @@ public class StockWatcher implements EntryPoint {
  private  HorizontalPanel addPanel = new HorizontalPanel();
  private TextBox newSymbolTextBox = new TextBox();
  private Button addStockButton = new Button("Add");
+
  private Label lastUpdatedLabel = new Label();
  private ArrayList<String> stocks = new ArrayList<String>();
  private static final int REFRESH_INTERVAL = 5000; // ms
@@ -64,6 +65,7 @@ public class StockWatcher implements EntryPoint {
     RootPanel.get().add(addPanel);
     RootPanel.get().add(newSymbolTextBox);
     RootPanel.get().add(addStockButton);
+   
     RootPanel.get().add(mainPanel);
     
 
